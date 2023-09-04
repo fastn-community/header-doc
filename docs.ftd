@@ -18,7 +18,7 @@ string package-full-name: fastn-community.github.io/header-doc
 optional string license-url: https://github.com/fastn-community/header-doc/blob/main/LICENSE
 string github: https://github.com/fastn-community/header-doc/
 module category: fastn-community.github.io/header-doc
-ftd.image-src logo: $assets.files.assets.ipsum-logo.svg
+ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 
 
 -- site-doc.doc-home: $concat2(a = fastn-package:, b = $home.package-name)
@@ -78,7 +78,7 @@ string package-full-name: fastn-community.github.io/header-doc
 optional string license-url: https://github.com/fastn-community/header-doc/blob/main/LICENSE
 string github: https://github.com/fastn-community/header-doc/
 module category: fastn-community.github.io/header-doc
-ftd.image-src logo: $assets.files.assets.ipsum-logo.svg
+ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 
 
 -- site-doc.doc-home: Documentation - Card
