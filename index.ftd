@@ -1,0 +1,39 @@
+-- import: fastn-community.github.io/header-doc/docs
+-- import: fastn-community.github.io/header-doc/lib
+export: display-card
+exposing: display-card
+
+
+
+-- docs.home:
+
+
+
+
+
+
+
+
+
+-- component header:
+optional caption site-name:
+optional ftd.image-src site-logo:
+string site-url:
+children extra-header-items:
+boolean show-sitemap-data: true
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.step-2
+align-content: center
+
+-- ftd.text: Implement the **header** component here
+text-align: center
+
+-- ui:
+for: ui in $header.extra-header-items
+
+-- end: ftd.column
+
+-- end: header

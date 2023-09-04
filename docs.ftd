@@ -1,0 +1,192 @@
+-- import: fastn-community.github.io/header-doc
+-- import: tf
+-- import: cb
+
+
+
+
+
+
+
+
+
+
+
+-- component home:
+string package-name: header-doc
+string package-full-name: fastn-community.github.io/header-doc
+optional string license-url: https://github.com/fastn-community/header-doc/blob/main/LICENSE
+string github: https://github.com/fastn-community/header-doc/
+module category: fastn-community.github.io/header-doc
+ftd.image-src logo: $assets.files.images.ipsum-logo.svg
+
+
+-- site-doc.doc-home: $concat2(a = fastn-package:, b = $home.package-name)
+license-url if { home.license-url != NULL }: $home.license-url
+current-package: $home.package-full-name
+show-tabs: false
+site-title: $home.package-name
+github-url: $home.github
+
+-- site-doc.header: Header
+
+-- home.category.header: My Site
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: /
+
+-- ftd.text: Hello
+
+-- end: home.category.header
+
+
+-- site-doc.header: Usage:
+
+-- cb.code: $concat3(a = Add, b = $home.package-name, c = dependency into your `FASTN.ftd`)
+lang: ftd
+
+$concat2(a = -- fastn.dependency:, b = $home.package-full-name)
+
+
+-- cb.code: In `index.ftd` (or whichever file you want to add)
+
+$concat-with-line(a = -- import:, b = $home.package-full-name, c = as header, d = $sample-code)
+
+-- end: site-doc.doc-home
+
+-- end: home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component detail-doc:
+string package-name: header-doc
+string package-full-name: fastn-community.github.io/header-doc
+optional string license-url: https://github.com/fastn-community/header-doc/blob/main/LICENSE
+string github: https://github.com/fastn-community/header-doc/
+module category: fastn-community.github.io/header-doc
+ftd.image-src logo: $assets.files.images.ipsum-logo.svg
+
+
+-- site-doc.doc-home: Documentation - Card
+site-title: $detail-doc.package-name
+show-tabs: false
+license-url if { detail-doc.license-url != NULL }: $detail-doc.license-url
+current-package: $detail-doc.package-full-name
+github-url: $detail-doc.github
+
+
+This is a card component which will render your data as a business card
+(front-view).
+
+-- site-doc.header: How to use
+
+-- cb.code: $concat3(a = Add, b = $detail-doc.package-name, c = dependency into your FASTN.ftd)
+lang: ftd
+
+$concat2(a = -- fastn.dependency:, b = $detail-doc.package-full-name)
+
+-- cb.code: In `index.ftd` (or whichever file you want to add)
+
+$concat-with-line(a = -- import:, b = $detail-doc.package-full-name, c = as header, d = $sample-code)
+
+
+-- site-doc.header: Preview
+
+
+-- detail-doc.category.header: My Site
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: /
+
+-- ftd.text: Hello
+
+
+-- end: detail-doc.category.header
+
+-- end: site-doc.doc-home
+
+
+-- end: detail-doc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- string sample-code:
+
+\-- header.header: My Site
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: /
+
+\-- ftd.text: Hello
+
+\-- end: header.header
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- string concat2(a,b):
+string a:
+string b:
+
+a + " " + b
+
+
+
+
+
+
+
+
+
+
+-- string concat3(a,b,c):
+string a:
+string b:
+string c:
+
+a + " `" + b + "` " + c
+
+
+
+-- string concat-with-line(a,b,c):
+string a:
+string b:
+string c:
+string d:
+
+a + " " + b + " " + c + "\\n\\n" + d
