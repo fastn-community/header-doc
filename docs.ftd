@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/header-doc
+-- import: fastn-community.github.io/sitemap-header-doc
 -- import: tf
 -- import: cb
 
@@ -13,11 +13,11 @@
 
 
 -- component home:
-string package-name: header-doc
-string package-full-name: fastn-community.github.io/header-doc
-optional string license-url: https://github.com/fastn-community/header-doc/blob/main/LICENSE
-string github: https://github.com/fastn-community/header-doc/
-module category: fastn-community.github.io/header-doc
+string package-name: sitemap-header-doc
+string package-full-name: fastn-community.github.io/sitemap-header-doc
+optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/main/LICENSE
+string github: https://github.com/fastn-community/sitemap-header-doc/
+module category: fastn-community.github.io/sitemap-header-doc
 ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 
 
@@ -73,11 +73,11 @@ $concat-with-line(a = -- import:, b = $home.package-full-name, c = as header, d 
 
 
 -- component detail-doc:
-string package-name: header-doc
-string package-full-name: fastn-community.github.io/header-doc
-optional string license-url: https://github.com/fastn-community/header-doc/blob/main/LICENSE
-string github: https://github.com/fastn-community/header-doc/
-module category: fastn-community.github.io/header-doc
+string package-name: sitemap-header-doc
+string package-full-name: fastn-community.github.io/sitemap-header-doc
+optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/main/LICENSE
+string github: https://github.com/fastn-community/sitemap-header-doc/
+module category: fastn-community.github.io/sitemap-header-doc
 ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 
 
