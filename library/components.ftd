@@ -1,0 +1,35 @@
+-- import: fastn-community.github.io/sitemap-header-doc/library/data
+
+-- component display-sections:
+
+-- ftd.row:
+align-self: center
+
+-- display-section: $obj.title
+$loop$: $data.sitemap.sections as $obj
+link: $obj.url
+is-active: $obj.is-active
+
+-- end: ftd.row
+
+-- end: display-sections
+
+
+
+
+-- component display-section:
+caption title:
+optional string link:
+boolean is-active:
+
+-- ftd.text: $display-section.title
+role: $inherited.types.copy-small
+link: $display-section.link
+white-space: nowrap
+padding-left.px: 10
+color: $inherited.colors.text-strong
+color if { display-section.is-active }: $inherited.colors.cta-primary.base
+margin-left.px: 10
+
+
+-- end: display-section
