@@ -1,7 +1,7 @@
 -- import: fastn
 
--- fastn.package: fastn-community.github.io/header-doc
-favicon: /-/fastn-community.github.io/header-doc/favicon.ico
+-- fastn.package: fastn-community.github.io/sitemap-header-doc
+favicon: /-/fastn-community.github.io/sitemap-header-doc/favicon.ico
 
 -- fastn.dependency: fastn-stack.github.io/fastn-js
 -- fastn.dependency: fastn-community.github.io/site-doc
@@ -9,7 +9,7 @@ favicon: /-/fastn-community.github.io/header-doc/favicon.ico
 -- fastn.dependency: fastn-community.github.io/code-block as cb
 
 
--- fastn.auto-import: fastn-community.github.io/header-doc/assets
+-- fastn.auto-import: fastn-community.github.io/sitemap-header-doc/assets
 -- fastn.auto-import: fastn-community.github.io/site-doc
 
 
