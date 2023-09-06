@@ -1,172 +1,61 @@
 -- import: fastn-community.github.io/sitemap-header-doc
 -- import: tf
 -- import: cb
+-- import: cdc
 
 
 
 
 
-
-
-
-
-
-
--- component home:
+-- component main:
 string package-name: sitemap-header-doc
 string package-full-name: fastn-community.github.io/sitemap-header-doc
 optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/main/LICENSE
 string github: https://github.com/fastn-community/sitemap-header-doc/
 module category: fastn-community.github.io/sitemap-header-doc
 ftd.image-src logo: $assets.files.images.ipsum-logo.svg
+optional string preview-url:
+optional string created-by:
+optional body description:
 
+-- cdc.page:
+github-url: $main.package-name
 
--- site-doc.doc-home: $concat2(a = fastn-package:, b = $home.package-name)
-license-url if { home.license-url != NULL }: $home.license-url
-current-package: $home.package-full-name
-show-tabs: false
-site-title: $home.package-name
-github-url: $home.github
+-- cdc.hero-section: Midnight Business Card
+subtitle: By **Priyanka**
+cta-primary-text if {main.preview-url}: Preview
+cta-primary-link: /
+cta-secondary-text: Preview
+cta-secondary-link: /
 
--- site-doc.header: Header
+The Midnight Business Card is an elegant and professional template featuring a
+dark, midnight-blue color scheme, clean typography, and a well-organized layout
+for essential contact details. Perfect for businesses aiming to convey
+sophistication and professionalism.
 
--- home.category.header: My Site
-site-logo: $assets.files.images.ipsum-logo.svg
-site-url: /
+-- cdc.slider:
 
--- home.category.header.logo-right-components:
+-- cdc.code-with-preview:
 
--- search:
+\-- ftd.text: Hello
 
--- end: home.category.header.logo-right-components
+-- ftd.text: Hello
 
--- login-button:
+-- end: cdc.code-with-preview
 
--- end: home.category.header
+-- cdc.code-with-preview:
 
+\-- ftd.text: World
 
--- site-doc.header: Usage:
+-- ftd.text: World
 
--- cb.code: $concat3(a = Add, b = $home.package-name, c = dependency into your `FASTN.ftd`)
-lang: ftd
+-- end: cdc.code-with-preview
 
-$concat2(a = -- fastn.dependency:, b = $home.package-full-name)
+-- end: cdc.slider
 
+-- end: cdc.page
 
--- cb.code: In `index.ftd` (or whichever file you want to add)
-
-$concat-with-line(a = -- import:, b = $home.package-full-name, c = as header, d = $sample-code)
-
--- end: site-doc.doc-home
-
--- end: home
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- component detail-doc:
-string package-name: sitemap-header-doc
-string package-full-name: fastn-community.github.io/sitemap-header-doc
-optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/main/LICENSE
-string github: https://github.com/fastn-community/sitemap-header-doc/
-module category: fastn-community.github.io/sitemap-header-doc
-ftd.image-src logo: $assets.files.images.ipsum-logo.svg
-
-
--- site-doc.doc-home: Documentation - Card
-site-title: $detail-doc.package-name
-show-tabs: false
-license-url if { detail-doc.license-url != NULL }: $detail-doc.license-url
-current-package: $detail-doc.package-full-name
-github-url: $detail-doc.github
-
-
-This is a card component which will render your data as a business card
-(front-view).
-
--- site-doc.header: How to use
-
--- cb.code: $concat3(a = Add, b = $detail-doc.package-name, c = dependency into your FASTN.ftd)
-lang: ftd
-
-$concat2(a = -- fastn.dependency:, b = $detail-doc.package-full-name)
-
--- cb.code: In `index.ftd` (or whichever file you want to add)
-
-$concat-with-line(a = -- import:, b = $detail-doc.package-full-name, c = as header, d = $sample-code)
-
-
--- site-doc.header: Preview
-
-
--- detail-doc.category.header: My Site
-site-logo: $assets.files.images.ipsum-logo.svg
-site-url: /
-
--- detail-doc.category.header.logo-right-components:
--- search:
--- end: detail-doc.category.header.logo-right-components
-
--- login-button:
-
-
--- end: detail-doc.category.header
-
--- end: site-doc.doc-home
-
-
--- end: detail-doc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- string sample-code:
-
-\-- header.header: My Site
-site-logo: $assets.files.images.ipsum-logo.svg
-site-url: /
-
-\-- header.header.logo-right-components:
-
-\;; -- search: <ADD ANY COMPONENT/S HERE>
-
-\-- end: header.header.logo-right-components
-
-\;; -- login-button: <ADD ANY COMPONENT/S HERE>
-
-\-- end: header.header
-
-
-
-
-
-
-
+-- end: main
 
 
 
