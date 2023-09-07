@@ -1,12 +1,7 @@
 -- import: fastn-community.github.io/sitemap-header-doc
 -- import: tf
 -- import: cb
-
-
-
-
-
-
+-- import: cdc
 
 
 
@@ -15,158 +10,64 @@
 -- component home:
 string package-name: sitemap-header-doc
 string package-full-name: fastn-community.github.io/sitemap-header-doc
-optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/main/LICENSE
+optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/home/LICENSE
 string github: https://github.com/fastn-community/sitemap-header-doc/
 module category: fastn-community.github.io/sitemap-header-doc
 ftd.image-src logo: $assets.files.images.ipsum-logo.svg
+optional string preview-url:
+string created-by: By **Priyanka**
+optional body description:
 
+-- cdc.page:
+github-url: $home.package-name
 
--- site-doc.doc-home: $concat2(a = fastn-package:, b = $home.package-name)
-license-url if { home.license-url != NULL }: $home.license-url
-current-package: $home.package-full-name
-show-tabs: false
-site-title: $home.package-name
-github-url: $home.github
+-- cdc.hero-section: $home.package-name
+subtitle: $home.created-by
+cta-primary-text: Preview
+cta-primary-link: $home.preview-url
+cta-secondary-text: Preview
+cta-secondary-link: /
+thumbstamp: $assets.files.images.stamp.svg
 
--- site-doc.header: Header
+-- cdc.preview:
 
--- home.category.header: My Site
+-- cdc.code-with-preview:
+
+\-- home.category.header:
+site-name: Fastn
 site-logo: $assets.files.images.ipsum-logo.svg
-site-url: /
+site-url: index.html
 
--- home.category.header.logo-right-components:
+-- home.category.header:
+site-name: Fastn
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: index.html
 
--- search:
+-- end: cdc.code-with-preview
 
--- end: home.category.header.logo-right-components
+-- end: cdc.preview
 
--- login-button:
+-- cdc.preview: header without sitename
 
--- end: home.category.header
+-- cdc.code-with-preview:
 
+\-- header:
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: index.html
 
--- site-doc.header: Usage:
+-- home.category.header:
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: index.html
 
--- cb.code: $concat3(a = Add, b = $home.package-name, c = dependency into your `FASTN.ftd`)
-lang: ftd
+-- end: cdc.code-with-preview
 
-$concat2(a = -- fastn.dependency:, b = $home.package-full-name)
+-- end: cdc.preview
 
+-- cdc.overview: Properties
 
--- cb.code: In `index.ftd` (or whichever file you want to add)
-
-$concat-with-line(a = -- import:, b = $home.package-full-name, c = as header, d = $sample-code)
-
--- end: site-doc.doc-home
+-- end: cdc.page
 
 -- end: home
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- component detail-doc:
-string package-name: sitemap-header-doc
-string package-full-name: fastn-community.github.io/sitemap-header-doc
-optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/main/LICENSE
-string github: https://github.com/fastn-community/sitemap-header-doc/
-module category: fastn-community.github.io/sitemap-header-doc
-ftd.image-src logo: $assets.files.images.ipsum-logo.svg
-
-
--- site-doc.doc-home: Documentation - Card
-site-title: $detail-doc.package-name
-show-tabs: false
-license-url if { detail-doc.license-url != NULL }: $detail-doc.license-url
-current-package: $detail-doc.package-full-name
-github-url: $detail-doc.github
-
-
-This is a card component which will render your data as a business card
-(front-view).
-
--- site-doc.header: How to use
-
--- cb.code: $concat3(a = Add, b = $detail-doc.package-name, c = dependency into your FASTN.ftd)
-lang: ftd
-
-$concat2(a = -- fastn.dependency:, b = $detail-doc.package-full-name)
-
--- cb.code: In `index.ftd` (or whichever file you want to add)
-
-$concat-with-line(a = -- import:, b = $detail-doc.package-full-name, c = as header, d = $sample-code)
-
-
--- site-doc.header: Preview
-
-
--- detail-doc.category.header: My Site
-site-logo: $assets.files.images.ipsum-logo.svg
-site-url: /
-
--- detail-doc.category.header.logo-right-components:
--- search:
--- end: detail-doc.category.header.logo-right-components
-
--- login-button:
-
-
--- end: detail-doc.category.header
-
--- end: site-doc.doc-home
-
-
--- end: detail-doc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- string sample-code:
-
-\-- header.header: My Site
-site-logo: $assets.files.images.ipsum-logo.svg
-site-url: /
-
-\-- header.header.logo-right-components:
-
-\;; -- search: <ADD ANY COMPONENT/S HERE>
-
-\-- end: header.header.logo-right-components
-
-\;; -- login-button: <ADD ANY COMPONENT/S HERE>
-
-\-- end: header.header
-
-
-
-
-
-
-
 
 
 
