@@ -7,55 +7,67 @@
 
 
 
--- component main:
+-- component home:
 string package-name: sitemap-header-doc
 string package-full-name: fastn-community.github.io/sitemap-header-doc
-optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/main/LICENSE
+optional string license-url: https://github.com/fastn-community/sitemap-header-doc/blob/home/LICENSE
 string github: https://github.com/fastn-community/sitemap-header-doc/
 module category: fastn-community.github.io/sitemap-header-doc
 ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 optional string preview-url:
-optional string created-by:
+string created-by: By **Priyanka**
 optional body description:
 
 -- cdc.page:
-github-url: $main.package-name
+github-url: $home.package-name
 
--- cdc.hero-section: Midnight Business Card
-subtitle: By **Priyanka**
-cta-primary-text if {main.preview-url}: Preview
-cta-primary-link: /
+-- cdc.hero-section: $home.package-name
+subtitle: $home.created-by
+cta-primary-text: Preview
+cta-primary-link: $home.preview-url
 cta-secondary-text: Preview
 cta-secondary-link: /
+thumbstamp: $assets.files.images.stamp.svg
 
-The Midnight Business Card is an elegant and professional template featuring a
-dark, midnight-blue color scheme, clean typography, and a well-organized layout
-for essential contact details. Perfect for businesses aiming to convey
-sophistication and professionalism.
-
--- cdc.slider:
+-- cdc.preview:
 
 -- cdc.code-with-preview:
 
-\-- ftd.text: Hello
+\-- home.category.header:
+site-name: Fastn
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: index.html
 
--- ftd.text: Hello
+-- home.category.header:
+site-name: Fastn
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: index.html
 
 -- end: cdc.code-with-preview
+
+-- end: cdc.preview
+
+-- cdc.preview: header without sitename
 
 -- cdc.code-with-preview:
 
-\-- ftd.text: World
+\-- header:
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: index.html
 
--- ftd.text: World
+-- home.category.header:
+site-logo: $assets.files.images.ipsum-logo.svg
+site-url: index.html
 
 -- end: cdc.code-with-preview
 
--- end: cdc.slider
+-- end: cdc.preview
+
+-- cdc.overview: Properties
 
 -- end: cdc.page
 
--- end: main
+-- end: home
 
 
 
