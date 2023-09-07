@@ -15,7 +15,7 @@ string github: https://github.com/fastn-community/sitemap-header-doc/
 module category: fastn-community.github.io/sitemap-header-doc
 ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 optional string preview-url:
-string created-by: By **Priyanka**
+optional string created-by:
 optional body description:
 
 -- cdc.page:
@@ -23,10 +23,10 @@ github-url: $home.package-name
 
 -- cdc.hero-section: $home.package-name
 subtitle: $home.created-by
-cta-primary-text: Preview
-cta-primary-link: $home.preview-url
+cta-primary-text: View more
+cta-primary-link: https://fastn.com/featured/
 cta-secondary-text: Preview
-cta-secondary-link: /
+cta-secondary-link: $home.preview-url
 
 
 -- cdc.preview:
