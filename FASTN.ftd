@@ -7,7 +7,7 @@ favicon: /-/fastn-community.github.io/sitemap-header-doc/favicon.ico
 -- fastn.dependency: fastn-community.github.io/site-doc
 -- fastn.dependency: fastn-community.github.io/typography as tf
 -- fastn.dependency: fastn-community.github.io/code-block as cb
-
+-- fastn.dependency: fastn-community.github.io/category-doc-components as cdc
 
 -- fastn.auto-import: fastn-community.github.io/sitemap-header-doc/assets
 -- fastn.auto-import: fastn-community.github.io/site-doc
@@ -17,5 +17,4 @@ favicon: /-/fastn-community.github.io/sitemap-header-doc/favicon.ico
 
 # Home: index.html
 
-- Overview: index.html
-- How to use: /how-to-use/
+
