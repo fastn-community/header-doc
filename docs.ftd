@@ -27,7 +27,7 @@ cta-primary-text: Preview
 cta-primary-link: $home.preview-url
 cta-secondary-text: Preview
 cta-secondary-link: /
-thumbstamp: $assets.files.images.stamp.svg
+
 
 -- cdc.preview:
 
