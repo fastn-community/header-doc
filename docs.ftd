@@ -19,7 +19,6 @@ optional string created-by:
 optional body description:
 
 -- cdc.page:
-github-url: $home.package-name
 
 -- cdc.hero-section: $home.package-name
 subtitle: $home.created-by
