@@ -17,6 +17,7 @@ ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 optional string preview-url:
 optional string created-by:
 optional body description:
+ftd.type-data types: $inherited.types
 
 -- cdc.page:
 github-url: $home.package-name
