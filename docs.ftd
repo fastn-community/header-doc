@@ -1,6 +1,4 @@
 -- import: fastn-community.github.io/sitemap-header-doc
--- import: tf
--- import: cb
 -- import: cdc
 
 
@@ -17,15 +15,19 @@ ftd.image-src logo: $assets.files.images.ipsum-logo.svg
 optional string preview-url:
 optional string created-by:
 optional body description:
+ftd.type-data types: $inherited.types
 
 -- cdc.page:
 
 -- cdc.hero-section: $home.package-name
 subtitle: $home.created-by
-cta-primary-text: View more
+cta-primary-text: View more sitemap header designs
 cta-primary-link: https://fastn.com/featured/
 cta-secondary-text: Preview
 cta-secondary-link: $home.preview-url
+github-url: $home.github
+license-url: $home.license-url
+
 
 -- cdc.preview:
 
@@ -97,71 +99,3 @@ string a:
 + "-- header.header:\\n"
 + "site-logo: $assets.files.images.ipsum-logo.svg\\n"
 + "site-url: index.html\\n"
-
-
-
-
-
-
--- string concat2(a,b):
-string a:
-string b:
-
-a + " " + b
-
-
-
-
-
-
-
-
-
-
--- string concat3(a,b,c):
-string a:
-string b:
-string c:
-
-a + " `" + b + "` " + c
-
-
-
--- string concat-with-line(a,b,c):
-string a:
-string b:
-string c:
-string d:
-
-a + " " + b + " " + c + "\\n\\n" + d
-
-
-
-
--- component login-button:
-
--- ftd.text: Login
-role: $inherited.types.copy-small
-padding-vertical.px: 10
-padding-horizontal.px: 15
-background.solid: $inherited.colors.cta-tertiary.base
-color: $inherited.colors.cta-tertiary.text
-border-radius.px: 5
-
--- end: login-button
-
-
-
-
-
--- component search:
-
--- ftd.text-input:
-placeholder: 🔎 Search
-background.solid: $inherited.colors.background.base
-border-radius.px: 20
-border-width.px: 1
-border-color: $inherited.colors.border
-padding.px: 5
-
--- end: search
