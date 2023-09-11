@@ -24,10 +24,13 @@ github-url: $home.package-name
 
 -- cdc.hero-section: $home.package-name
 subtitle: $home.created-by
-cta-primary-text: View more
+cta-primary-text: View more sitemap header designs
 cta-primary-link: https://fastn.com/featured/
 cta-secondary-text: Preview
 cta-secondary-link: $home.preview-url
+github-url: $home.github
+license-url: $home.license-url
+
 
 -- cdc.preview:
 
