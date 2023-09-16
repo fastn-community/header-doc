@@ -20,16 +20,14 @@ ftd.type-data types: $inherited.types
 -- cdc.page:
 
 -- cdc.hero-section: $home.package-name
-subtitle: $home.created-by
 cta-primary-text: View more sitemap header designs
 cta-primary-link: https://fastn.com/featured/
 cta-secondary-text: Preview
 cta-secondary-link: $home.preview-url
 github-url: $home.github
 license-url: $home.license-url
-
-
--- cdc.preview:
+creator-name: $home.created-by
+subtitle: $home.description
 
 -- cdc.code-with-preview:
 
@@ -42,11 +40,10 @@ site-url: index.html
 
 -- end: cdc.code-with-preview
 
--- end: cdc.preview
 
--- cdc.preview: header without sitename
 
--- cdc.code-with-preview:
+
+-- cdc.code-with-preview: header without sitename
 
 $sample-code-without-sitename(a = $home.package-full-name)
 
@@ -56,9 +53,8 @@ site-url: index.html
 
 -- end: cdc.code-with-preview
 
--- end: cdc.preview
 
--- cdc.overview: Properties
+/-- cdc.overview: Properties
 
 -- end: cdc.page
 
