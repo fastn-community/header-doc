@@ -19,7 +19,7 @@ created-by: Priyanka
 -- component header:
 optional caption site-name:
 optional ftd.image-src site-logo:
-string site-url:
+optional string site-url:
 
 -- ftd.row:
 width: fill-container
@@ -33,7 +33,7 @@ padding-vertical.px: 24
 -- ftd.row:
 spacing.fixed.px: 10
 align-content: center
-link: { header.site-url != NULL }
+link if { header.site-url != NULL }: $header.site-url
 
 -- ftd.image:
 src: $header.site-logo
